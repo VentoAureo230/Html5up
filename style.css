@@ -18,6 +18,24 @@ body {
 }
 .section1{
     background-color:#5f43a7 ;
+    padding: 10% 0 10% 0;
+}
+
+.titre { /* h1 */
+    color: white;
+}
+
+.sous-titre { /* h2 */
+
+}
+
+.btn {
+    /* padding: ; */
+    border-radius: 10px;
+    border: 2px;
+    border-color: #765EB3 ;
+    text-align: center;
+    font-size: 16px;
 }
 
 .section2 {
