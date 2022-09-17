@@ -1,0 +1,6 @@
+Mettre en forme le form
+Fix le pb de padding top en heut de la section 1
+Fix le footer
+
+
+Faire le média query vers desktop
