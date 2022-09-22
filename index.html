@@ -5,30 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" rel="type/text" href="style.css">
+    <script src="https://kit.fontawesome.com/0af60273bd.js" crossorigin="anonymous"></script>
     <title>HTML 5 Up Training</title>
 </head>
 <header>
     <!-- https://html5up.net/hyperspace -->
     <!-- Navbar du site qui n'est pas visible en format téléphone -->
     <nav class="navbar">  
-        <div class="nav-tabs">
-            <div class="nav-tab"></div>
-            <div class="nav-tab"></div>
-            <div class="nav-tab"></div>
-            <div class="nav-tab"></div>
-        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="#section-firt">Welcome</a>
+            </li>
+            <li>
+                <a href="#section-second">Who we are</a>
+            </li>
+            <li>
+                <a href="#section-third">What we do</a>
+            </li>
+            <li>
+                <a href="#section-fourth">Get in touch</a>
+            </li>
+        </ul>
     </nav>
 </header>
 <body>
     <main class="main">
-        <div class="section1">
+        <div class="section-first" id="section-first">
             <h1>Hyperspace</h1>
             <p class="landing-text">Just another fine responsive site template designed by HTML5 UP and released for free under the Creative Commons.</p>
             <div class="btn-center">
-                <button tyme="submit" class="btn" name="button"><span>Learn More</span></button>
+                <button href="#section-second" class="btn" name="button"><span>Learn More</span></button>
             </div>
         </div>
-        <div class="section2">
+        <div class="section-second" id="section-second">
             <img src="/media/pic01.jpg" alt="photo d'un téléphone" class="photo">
             <h2 class="sous-titre padding-top--10">Sed Ipsum dolor</h2>
                 <p class="para-text">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
@@ -48,38 +57,38 @@
                 <button class="btn"><span>Learn More</span></button>
             </div>
         </div>
-        <div class="section3">
+        <div class="section-third" id="section-third">
             <h2 class="sous-titre">What we do</h2>
                 <p class="para-text">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
             <div class="grid-container">
-                <div>
-                    <img class="icon-svg-grid" src="media/icon/balise_html.svg" alt="icon de balise HTML">
+                <div>   
+                    <i class="fa-solid fa-code"></i>
                     <h3>Lorem Ipsum Amet</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 
                 </div>
                 <div>
-                    <img class="icon-svg-grid" src="media/icon/padlock.svg" alt="Icone de cadenas">
+                    <i class="fa-solid fa-lock"></i>
                     <h3>Aliquam sed nullam</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
                 <div>
-                    <img class="icon-svg-grid" src="media/icon/parametre.svg" alt="Icone d'engrenage">
+                    <i class="fa-regular fa-gear"></i>
                     <h3>Sed erat ullam corper</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
                 <div>
-                    <img class="icon-svg-grid" src="media/icon/screen.svg" alt="Icone d'écran d'ordinateur">
+                    <i class="fa-solid fa-desktop"></i>
                     <h3>Veroeros quis lorem</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
                 <div>
-                    <img class="icon-svg-grid" src="media/icon/linl.svg" alt="Icone de lien">
+                    <i class="fa-solid fa-link"></i>
                     <h3>Urna quis bibendum</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
                 <div>
-                    <img class="icon-svg-grid" src="media/icon/diamond.svg" alt="Icone de diamant">
+                    <i class="fa-solid fa-gem"></i>
                     <h3>Aliquam urna dapibus</h3>
                     <p class="para-text">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
@@ -89,22 +98,16 @@
                 <button class="btn"><span>Learn More</span></button>
             </div>
         </div>
-        <div class="section4">
+        <div class="section-fourth" id="section-fourth">
             <h2 class="sous-titre">Get in touch</h2>
                 <p class="para-text">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
             <form class="form-contact">
-                <div class="field">
-                    <label for="name">Name</label>
-                    <input type="text" required="required"></input>
-                </div>
-                <div class="field">
-                    <label for="email">Email</label>
-                    <input type="text" required="required"></input>
-                </div>
-                <div class="field">
-                    <label for="message">Message</label>
-                    <input type="text" required="required"></input>
-                </div>
+                    <label class="form-label" for="name">Name</label>
+                    <input class="small-area-input input-background" type="text" required="required"></input>
+                    <label class="form-label" for="email">Email</label>
+                    <input class="small-area-input input-background" type="text" required="required"></input>
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="message-area-input input-background" type="text" required="required"></textarea>
                 <div class="btn-center">
                     <button type="button" class="btn"><span>Send Message</span></button>
                 </div>
@@ -115,17 +118,17 @@
             <ul class="info-contact-list">
                 <li>
                     <h3>Address</h3>
-                    <span>12345 Somewhere Road #654</span></br>
-                    <span>Nashville, TN 00000-0000</span></br>
-                    <span>USA</span>
+                    <p>12345 Somewhere Road #654</p>
+                    <p>Nashville, TN 00000-0000</p>
+                    <p>USA</p>
                 </li>
                 <li>
                     <h3>Email</h3>
-                    <span>user@untitled.tld</span>
+                    <p>user@untitled.tld</p>
                 </li>
                 <li>
                     <h3>Phone</h3>
-                    <span>(000) 000-0000</span>
+                    <p>(000) 000-0000</p>
                 </li>
                 <li>
                     <h3>Socials</h3>
@@ -134,9 +137,9 @@
         </div>
         <div class="footer">
             <ul class="list-footer">
-                <li>© Untitled. All rights reserved.</li>
-                <li>Images: Unsplash</li>
-                <li>Design: HTML5 UP</li>
+                <li class="list-footer-elements">© Untitled. All rights reserved.</li>
+                <li class="list-footer-elements">Images: Unsplash</li>
+                <li class="list-footer-elements">Design: HTML5 UP</li>
             </ul>
         </div>
     </main>
