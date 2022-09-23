@@ -222,13 +222,40 @@ i {
     }
 
     .section-first, .section-fourth, .section-second, .section-third {
-        margin-left: 20vw;
+        margin-left: 18vw;
     }
 
     .section-first{
+        height: 100vh;
+        padding-top: 5%;
+        padding-bottom: 0%;
     }
 
-    .btn {
+    .btn-center { /* position du bouton */
+        display: flex;
+        justify-content: left;
+        margin-left: 10%;
+    }
+
+    .btn { /* taille du bouton */
         padding: 0 5% 0 5%;
+        
+    }
+
+    .photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-second {
+        display: grid;
+        grid-template-columns: 400px 600px;
+        grid-template-rows: 50vh auto 50vh; 
+        justify-items: stretch;
+        margin-left: 20vw;
+    }
+
+    .grid-info-container {
+        justify-content: left;
     }
 }

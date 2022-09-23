@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass style.css style_output.css",
-    "watch": "sass style.css style_output.css"
+    "compile": "sass style_input.sass style_output.css",
+    "watch": "sass style_input.sass style_output.css"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "url": "https://github.com/VentoAureo230/Html5up/issues"
   },
   "homepage": "https://github.com/VentoAureo230/Html5up#readme",
-  "dependencies": {
+  "devDependencies": {
     "sass": "^1.55.0"
   }
 }

@@ -1,0 +1,299 @@
+$font-type: 'Source Sans Pro', Arial, sans-serif
+
+$navbar-color: #312450
+$landing-color: #5F43A7
+$blue-color: #5E42A6
+$pink-color: #B74E91
+$footer-color: #493382
+
+$max-h: 100vh
+$max-w: 100vw
+
+$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100)
+$sides: (top, bottom, left, right)
+
+@each $space in $spaceamounts 
+  @each $side in $sides 
+    .m-#{str-slice($side, 0, 1)}-#{$space} 
+      margin-#{$side}: #{$space}px !important
+    
+  
+    .p-#{str-slice($side, 0, 1)}-#{$space} 
+      padding-#{$side}: #{$space}px !important
+
+
+$position:
+    top: 't'
+    bottom: 'b'
+    right: 'r'
+    left: 'l'
+
+$units:
+    per: '%'
+
+@for $size from 0 through 100
+    @each $unit,$ut in $unit
+        @each $position,$pos in $position
+            .m-#{$pos}-#{#size}#{$unit} { margin-#{$position}: #{$size}#{$ut} !important}
+            .m-#{$pos}-#{#size}#{$unit} { padding-#{$position}: #{$size}#{$ut} !important}
+        
+        .m-#{$size}#{$unit} { margin: #{$size}#{$ut} !important}    
+        .m-v#{$size}#{$unit} { margin-top: #{$size}#{$ut} !important, margin-bottom:}    
+        .m-h#{$size}#{$unit} { margin-right: #{$size}#{$ut} !important, }    
+
+        .p-#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
+        .p-v#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
+        .p-h#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
+        
+         
+     
+     
+@mixin reset-list
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+body 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $font-type
+    font-weight: 300
+
+.main 
+    margin: 0
+    padding: 0
+.photo 
+    width: 100%
+    height: 80%
+
+.navbar 
+    display: none
+
+.btn 
+    line-height: 2.5
+    font-size: 1rem
+    text-align: center
+    color: #fff
+    border-radius: 25px
+    border: 1px solid #765EB3
+    background-color: transparent
+    padding: 0 30% 0 30%
+
+
+.btn span 
+    font-size: 1em
+    color: white
+    line-height: 26px
+    border: #5f43a7
+    vertical-align: baseline
+    letter-spacing: normal
+    word-spacing: 0px
+
+
+h1 
+    color: white
+    line-height: 26px
+    margin: 0 0 0 10%
+
+
+
+.landing-text 
+    justify-content: center
+    font-size: 1em
+    line-height: 26px
+    color: #AA99C7
+
+h2 
+    line-height: 26px
+    margin-left: 10%
+    color: white
+
+
+h3 
+    color: white
+    margin-left: 10%
+    line-height: normal
+
+
+.info-contact-list
+    list-style: none
+    padding-left: 0%
+
+
+.info-contact-list p 
+    color: #fff
+    line-height: 26px
+    padding-left: 10%
+
+
+.para-text 
+    justify-content: center
+    font-size: 1em
+    margin-left: 10%
+    margin-right: 10%
+    line-height: 26px
+    color: #AA99C7
+
+
+.form-contact 
+    display: flex
+    flex-direction: column
+    margin-left: 10%
+    margin-right: 10%
+
+
+.section-first, .section-fourth 
+    background-color: $landing-color
+
+
+.section-second 
+    background-color: #5052B5
+    
+
+
+.section-second div 
+    padding-bottom: 10%
+    display: flex
+    align-items: center
+    flex-direction: column
+
+
+.section-third 
+    background-color: #B74E91
+    padding-top: 10%
+    padding-bottom: 10%
+
+
+.grid-container 
+    display: grid
+    grid-template-columns: 90%
+    border: 2px black
+    margin-left: 10%
+
+
+.grid-container div 
+    padding: 10%
+    background-color: hsl(322, 42%, 55%)
+    border: 10px black
+
+
+.icon-svg-grid 
+    margin-left: 10%
+    background-color: white
+    border-radius: 50%
+    width: 50px
+    height: 50px
+
+
+.margin-top--5 
+    margin-top: 5%
+
+.footer 
+    background-color: $footer-color
+    padding: 10% 0 10% 0
+
+.list-footer-elements 
+    @include reset-list
+    color: #AA99C7
+    font-size: small
+
+
+.btn-center 
+    display: flex
+    align-items: center
+    justify-content: center
+
+
+i 
+    margin-left: 10%
+    background-color: white
+    border-radius: 50%
+    width: 20%
+    height: 20%
+
+
+.form-label 
+    color: white
+    font-size: 26px
+    padding: 5% 0
+
+
+.small-area-input 
+    padding: 0 0 5% 0
+    border-radius: 10px
+    opacity: 0.1
+
+
+.message-area-input 
+    padding: 0 0 50% 0
+    margin: 0 0 10% 0
+    border-radius: 10px
+    opacity: 0.1
+
+
+.input-background 
+    background-color: hsl(257, 43%, 75%)
+
+
+/* @media screen and (min-width:700px) 
+    .navbar 
+        width: 20vw
+        height: 100vh
+        background-color: rgb(49,36,80)
+        display: flex
+        position: fixed
+    
+
+    .nav-list 
+        margin-top: 100%
+        margin-left: 40%
+    
+    .nav-list li
+        align-items: center
+        justify-content: center
+        list-style: none
+        text-transform: uppercase
+        text-align: end
+    
+
+    .section-first, .section-fourth, .section-second, .section-third 
+        margin-left: 18vw
+    
+
+    .section-first
+        height: 100vh
+        padding-top: 5%
+        padding-bottom: 0%
+    
+
+    .btn-center  
+        display: flex
+        justify-content: left
+        margin-left: 10%
+    
+
+    .btn  
+        padding: 0 5% 0 5%
+        
+    
+
+    .photo 
+        width: 100%
+        height: 100%
+    
+
+    .section-second 
+        display: grid
+        grid-template-columns: 400px 600px
+        grid-template-rows: 50vh auto 50vh
+        justify-items: stretch
+        margin-left: 20vw
+    
+
+    .grid-info-container 
+        justify-content: left */
+
+
+    
