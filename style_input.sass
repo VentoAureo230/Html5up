@@ -4,12 +4,13 @@ $navbar-color: #312450
 $landing-color: #5F43A7
 $blue-color: #5E42A6
 $pink-color: #B74E91
+$paragraph-color:#AA99C7
 $footer-color: #493382
 
 $max-h: 100vh
 $max-w: 100vw
 
-$spaceamounts: (2, 5, 10, 20)
+$spaceamounts: (0, 2, 5, 10, 30, 50)
 $sides: (top, bottom, left, right)
 
 @each $space in $spaceamounts 
@@ -68,25 +69,19 @@ body
 h1 
     color: white
     line-height: 26px
-    margin: 0 0 0 10%
-
-
 
 .landing-text 
-    justify-content: center
+    
     font-size: 1em
     line-height: 26px
     color: #AA99C7
 
 h2 
     line-height: 26px
-    margin-left: 10%
     color: white
-
 
 h3 
     color: white
-    margin-left: 10%
     line-height: normal
 
 
@@ -98,23 +93,17 @@ h3
 .info-contact-list p 
     color: #fff
     line-height: 26px
-    padding-left: 10%
-
 
 .para-text 
     justify-content: center
     font-size: 1em
-    margin-left: 10%
-    margin-right: 10%
     line-height: 26px
-    color: #AA99C7
+    color: $paragraph-color
 
 
 .form-contact 
     display: flex
     flex-direction: column
-    margin-left: 10%
-    margin-right: 10%
 
 
 .section-first, .section-fourth 
@@ -123,66 +112,31 @@ h3
 
 .section-second 
     background-color: #5052B5
-    
-
-
-.section-second div 
-    padding-bottom: 10%
-    display: flex
-    align-items: center
-    flex-direction: column
 
 
 .section-third 
     background-color: #B74E91
-    padding-top: 10%
-    padding-bottom: 10%
 
 
 .grid-container 
     display: grid
     grid-template-columns: 90%
     border: 2px black
-    margin-left: 10%
 
 
 .grid-container div 
-    padding: 10%
     background-color: hsl(322, 42%, 55%)
-    border: 10px black
-
-
-.icon-svg-grid 
-    margin-left: 10%
-    background-color: white
-    border-radius: 50%
-    width: 50px
-    height: 50px
-
-
-.margin-top--5 
-    margin-top: 5%
+    border: 1px solid white
 
 .footer 
     background-color: $footer-color
-    padding: 10% 0 10% 0
 
 .list-footer-elements 
     @include reset-list
     color: #AA99C7
     font-size: small
 
-
-.btn-center 
-    display: flex
-    align-items: center
-    justify-content: center
-
-
 i 
-    margin-left: 10%
-    background-color: white
-    border-radius: 50%
     width: 20%
     height: 20%
 
@@ -190,18 +144,14 @@ i
 .form-label 
     color: white
     font-size: 26px
-    padding: 5% 0
 
 
 .small-area-input 
-    padding: 0 0 5% 0
     border-radius: 10px
     opacity: 0.1
 
 
 .message-area-input 
-    padding: 0 0 50% 0
-    margin: 0 0 10% 0
     border-radius: 10px
     opacity: 0.1
 
@@ -239,13 +189,6 @@ i
         height: 100vh
         padding-top: 5%
         padding-bottom: 0%
-    
-
-    .btn-center  
-        display: flex
-        justify-content: left
-        margin-left: 10%
-    
 
     .btn  
         padding: 0 5% 0 5%
