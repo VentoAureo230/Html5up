@@ -190,6 +190,28 @@
   padding-right: 50% !important;
 }
 
+.btn-blue {
+  background: #5F43A7;
+}
+.btn-blue:hover {
+  background: #7357bc;
+  transition: all 0.3s ease;
+}
+.btn-blue:active {
+  background: #a795d4;
+}
+
+.btn-pink {
+  background: #B74E91;
+}
+.btn-pink:hover {
+  background: #c36ba3;
+  transition: all 0.3s ease;
+}
+.btn-pink:active {
+  background: #dca9c9;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -216,7 +238,6 @@ body {
   line-height: 2.5;
   font-size: 1rem;
   text-align: center;
-  color: #fff;
   border-radius: 25px;
   border: 1px solid #765EB3;
   background-color: transparent;
@@ -225,7 +246,6 @@ body {
 
 .btn span {
   font-size: 1em;
-  color: white;
   line-height: 26px;
   border: #5f43a7;
   vertical-align: baseline;
@@ -311,11 +331,6 @@ h3 {
   font-size: small;
 }
 
-i {
-  width: 20%;
-  height: 20%;
-}
-
 .form-label {
   color: white;
   font-size: 26px;
@@ -336,40 +351,46 @@ i {
 }
 
 /* @media screen and (min-width:700px) 
- *  .navbar 
- *      width: 20vw
- *      height: 100vh
- *      background-color: rgb(49,36,80)
- *      display: flex
- *      position: fixed
- *  .nav-list 
+ * .navbar 
+ * width: 20vw
+ * height: 100vh
+ * background-color: rgb(49,36,80)
+ * display: flex
+ * position: fixed
+ *  .nav-list
  *      margin-top: 100%
  *      margin-left: 40%
+ *
  *  .nav-list li
  *      align-items: center
  *      justify-content: center
  *      list-style: none
  *      text-transform: uppercase
  *      text-align: end
- *  .section-first, .section-fourth, .section-second, .section-third 
+ *
+ *  .section-first, .section-fourth, .section-second, .section-third
  *      margin-left: 18vw
+ *
  *  .section-first
  *      height: 100vh
  *      padding-top: 5%
  *      padding-bottom: 0%
  *
- *  .btn  
+ *  .btn
  *      padding: 0 5% 0 5%
- *  .photo 
+ *
+ *  .photo
  *      width: 100%
  *      height: 100%
- *  .section-second 
+ *
+ *  .section-second
  *      display: grid
  *      grid-template-columns: 400px 600px
  *      grid-template-rows: 50vh auto 50vh
  *      justify-items: stretch
  *      margin-left: 20vw
- *  .grid-info-container 
+ *
+ *  .grid-info-container
  *      justify-content: left */
 
 /*# sourceMappingURL=style_output.css.map */

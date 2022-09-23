@@ -4,7 +4,7 @@ $navbar-color: #312450
 $landing-color: #5F43A7
 $blue-color: #5E42A6
 $pink-color: #B74E91
-$paragraph-color:#AA99C7
+$paragraph-color: #AA99C7
 $footer-color: #493382
 
 $max-h: 100vh
@@ -18,7 +18,6 @@ $sides: (top, bottom, left, right)
     .m-#{str-slice($side, 0, 1)}-#{$space} 
       margin-#{$side}: $space*1% !important 
     
-  
     .p-#{str-slice($side, 0, 1)}-#{$space} 
       padding-#{$side}: $space*1% !important
 
@@ -27,189 +26,174 @@ $sides: (top, bottom, left, right)
     padding: 0
     list-style: none
 
+@mixin button-bg($bg)
+    background: $bg
+    &:hover
+        background: lighten($bg,8%)
+        transition: all 0.3s ease
 
-body 
+    &:active
+        background: lighten($bg,25%)
+
+.btn-blue
+    @include button-bg($landing-color)
+
+.btn-pink
+    @include button-bg($pink-color)
+
+body
     margin: 0
     padding: 0
     box-sizing: border-box
     font-family: $font-type
     font-weight: 300
 
-.main 
+.main
     margin: 0
     padding: 0
-.photo 
+
+.photo
     width: 100%
     height: 80%
 
-.navbar 
+.navbar
     display: none
 
-.btn 
+.btn
     line-height: 2.5
     font-size: 1rem
     text-align: center
-    color: #fff
     border-radius: 25px
     border: 1px solid #765EB3
     background-color: transparent
     padding: 0 30% 0 30%
 
-
-.btn span 
+.btn span
     font-size: 1em
-    color: white
     line-height: 26px
     border: #5f43a7
     vertical-align: baseline
     letter-spacing: normal
     word-spacing: 0px
 
-
-h1 
+h1
     color: white
     line-height: 26px
 
-.landing-text 
-    
+.landing-text
+
     font-size: 1em
     line-height: 26px
     color: #AA99C7
 
-h2 
+h2
     line-height: 26px
     color: white
 
-h3 
+h3
     color: white
     line-height: normal
-
 
 .info-contact-list
     list-style: none
     padding-left: 0%
 
-
-.info-contact-list p 
+.info-contact-list p
     color: #fff
     line-height: 26px
 
-.para-text 
+.para-text
     justify-content: center
     font-size: 1em
     line-height: 26px
     color: $paragraph-color
 
-
-.form-contact 
+.form-contact
     display: flex
     flex-direction: column
 
-
-.section-first, .section-fourth 
+.section-first, .section-fourth
     background-color: $landing-color
 
-
-.section-second 
+.section-second
     background-color: #5052B5
 
-
-.section-third 
+.section-third
     background-color: #B74E91
 
-
-.grid-container 
+.grid-container
     display: grid
     grid-template-columns: 90%
     border: 2px black
 
-
-.grid-container div 
+.grid-container div
     background-color: hsl(322, 42%, 55%)
     border: 1px solid white
 
-.footer 
+.footer
     background-color: $footer-color
 
-.list-footer-elements 
+.list-footer-elements
     @include reset-list
     color: #AA99C7
     font-size: small
 
-i 
-    width: 20%
-    height: 20%
-
-
-.form-label 
+.form-label
     color: white
     font-size: 26px
 
-
-.small-area-input 
+.small-area-input
     border-radius: 10px
     opacity: 0.1
 
-
-.message-area-input 
+.message-area-input
     border-radius: 10px
     opacity: 0.1
 
-
-.input-background 
+.input-background
     background-color: hsl(257, 43%, 75%)
 
-
 /* @media screen and (min-width:700px) 
-    .navbar 
-        width: 20vw
-        height: 100vh
-        background-color: rgb(49,36,80)
-        display: flex
-        position: fixed
-    
+ .navbar 
+ width: 20vw
+ height: 100vh
+ background-color: rgb(49,36,80)
+ display: flex
+ position: fixed
+ 
 
-    .nav-list 
+    .nav-list
         margin-top: 100%
         margin-left: 40%
-    
+
     .nav-list li
         align-items: center
         justify-content: center
         list-style: none
         text-transform: uppercase
         text-align: end
-    
 
-    .section-first, .section-fourth, .section-second, .section-third 
+    .section-first, .section-fourth, .section-second, .section-third
         margin-left: 18vw
-    
 
     .section-first
         height: 100vh
         padding-top: 5%
         padding-bottom: 0%
 
-    .btn  
+    .btn
         padding: 0 5% 0 5%
-        
-    
 
-    .photo 
+    .photo
         width: 100%
         height: 100%
-    
 
-    .section-second 
+    .section-second
         display: grid
         grid-template-columns: 400px 600px
         grid-template-rows: 50vh auto 50vh
         justify-items: stretch
         margin-left: 20vw
-    
 
-    .grid-info-container 
+    .grid-info-container
         justify-content: left */
-
-
-    
