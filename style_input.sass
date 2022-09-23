@@ -9,45 +9,18 @@ $footer-color: #493382
 $max-h: 100vh
 $max-w: 100vw
 
-$spaceamounts: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100)
+$spaceamounts: (2, 5, 10, 20)
 $sides: (top, bottom, left, right)
 
 @each $space in $spaceamounts 
   @each $side in $sides 
     .m-#{str-slice($side, 0, 1)}-#{$space} 
-      margin-#{$side}: #{$space}px !important
+      margin-#{$side}: $space*1% !important 
     
   
     .p-#{str-slice($side, 0, 1)}-#{$space} 
-      padding-#{$side}: #{$space}px !important
+      padding-#{$side}: $space*1% !important
 
-
-$position:
-    top: 't'
-    bottom: 'b'
-    right: 'r'
-    left: 'l'
-
-$units:
-    per: '%'
-
-@for $size from 0 through 100
-    @each $unit,$ut in $unit
-        @each $position,$pos in $position
-            .m-#{$pos}-#{#size}#{$unit} { margin-#{$position}: #{$size}#{$ut} !important}
-            .m-#{$pos}-#{#size}#{$unit} { padding-#{$position}: #{$size}#{$ut} !important}
-        
-        .m-#{$size}#{$unit} { margin: #{$size}#{$ut} !important}    
-        .m-v#{$size}#{$unit} { margin-top: #{$size}#{$ut} !important, margin-bottom:}    
-        .m-h#{$size}#{$unit} { margin-right: #{$size}#{$ut} !important, }    
-
-        .p-#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
-        .p-v#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
-        .p-h#{$size}#{$unit} { padding: #{$size}#{$ut} !important}
-        
-         
-     
-     
 @mixin reset-list
     margin: 0
     padding: 0
