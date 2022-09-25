@@ -1,0 +1,18 @@
+/* List Style */    
+    
+@mixin reset-list
+    margin: 0
+    padding: 0
+    list-style: none
+
+
+/* Button hover effect */
+
+@mixin button-bg($bg)
+    background: $bg
+    &:hover
+        background: lighten($bg,8%)
+        transition: all 0.3s ease
+
+    &:active
+        background: lighten($bg,25%)

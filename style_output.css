@@ -1,3 +1,4 @@
+/* Margin & Padding */
 .m-t-0 {
   margin-top: 0% !important;
 }
@@ -190,6 +191,11 @@
   padding-right: 50% !important;
 }
 
+/* Colors */
+/* Font */
+/* Buttons */
+/* List Style */    
+/* Button hover effect */
 .btn-blue {
   background: #5F43A7;
 }
@@ -249,8 +255,6 @@ body {
   line-height: 26px;
   border: #5f43a7;
   vertical-align: baseline;
-  letter-spacing: normal;
-  word-spacing: 0px;
 }
 
 h1 {
