@@ -1,7 +1,7 @@
 @import 'components/_helpers'
 @import 'components/_variables'
 @import 'components/_mixins'
-
+@import 'components/_nav'
 
 .btn-blue
     @include button-bg($landing-color)
@@ -10,68 +10,49 @@
     @include button-bg($pink-color)
 
 body
-    margin: 0
-    padding: 0
+    @extend %no-spacing
     box-sizing: border-box
     font-family: $font-type
     font-weight: $font-weight
 
-.main
-    margin: 0
-    padding: 0
-
-.photo
-    width: 100%
-    height: 80%
-
 .navbar
     display: none
 
+h1, h2, h3
+    color: $white-color
+    line-height: $line-height
+
+.photo
+    width: $img-width
+    height: $img-height
+
 .btn
     line-height: 2.5
-    font-size: 1rem
-    text-align: center
+    font-size: $font-size-regular
     border-radius: $border-radius-btn
     border: $border-btn
     background-color: $bg-color-btn
-    padding: 0 30% 0 30%
 
 .btn span
-    font-size: 1em
+    font-size: $font-size-regular
     line-height: $line-height
-    border: #5f43a7
-    vertical-align: baseline
-
-
-h1
-    color: white
-    line-height: $line-height
+    color: $white-color
 
 .landing-text
 
-    font-size: 1em
+    font-size: $font-size-regular
     line-height: $line-height
-    color: #AA99C7
-
-h2
-    line-height: $line-height
-    color: white
-
-h3
-    color: white
-    line-height: normal
+    color: $paragraph-color
 
 .info-contact-list
-    list-style: none
-    padding-left: 0%
+    @include reset-list
 
 .info-contact-list p
-    color: #fff
+    color: $paragraph-color
     line-height: $line-height
 
 .para-text
-    justify-content: center
-    font-size: 1em
+    font-size: $font-size-regular
     line-height: $line-height
     color: $paragraph-color
 
@@ -83,50 +64,54 @@ h3
     background-color: $landing-color
 
 .section-second
-    background-color: #5052B5
+    background-color: $bg-color-section-two
 
 .section-third
-    background-color: #B74E91
+    background-color: $pink-color
 
 .grid-container
-    display: grid
-    grid-template-columns: 90%
-    border: 2px black
+    @include grid(1, 0%)
 
-.grid-container div
-    background-color: hsl(322, 42%, 55%)
-    border: 1px solid white
+.grid-container div 
+    border: $grid-border
+
+.border-radius-top
+    border-radius: $border-radius-top
+
+.border-radius-bot
+    border-radius: $border-radius-bot
 
 .footer
     background-color: $footer-color
 
 .list-footer-elements
     @include reset-list
-    color: #AA99C7
     font-size: small
 
+.list-footer
+    color: $paragraph-color
+
 .form-label
-    color: white
-    font-size: 26px
+    color: $form-label-color
+    font-size: $font-size-label
 
 .small-area-input
-    border-radius: 10px
-    opacity: 0.1
+    border-radius: $border-radius-input
+    opacity: $opacity-input
 
 .message-area-input
-    border-radius: 10px
-    opacity: 0.1
+    border-radius: $border-radius-input
+    opacity: $opacity-input
 
 .input-background
     background-color: hsl(257, 43%, 75%)
 
 /* @media screen and (min-width:700px) 
- .navbar 
- width: 20vw
- height: 100vh
- background-color: rgb(49,36,80)
- display: flex
- position: fixed
+    .navbar 
+        width: 20vw
+        height: 100vh
+        display: flex
+        position: fixed
  
 
     .nav-list

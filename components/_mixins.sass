@@ -12,7 +12,17 @@
     background: $bg
     &:hover
         background: lighten($bg,8%)
-        transition: all 0.3s ease
+        transition: all 0.3s ease-in
 
     &:active
         background: lighten($bg,25%)
+
+@mixin grid($cols, $marg)
+    float: left
+    margin-right: $marg
+    margin-bottom: $marg
+    width: calc((100% - (($cols - 1) * $marg)) / $cols)
+
+    &::nth-child(#{$cols}n)
+        margin-right: 0
+        
