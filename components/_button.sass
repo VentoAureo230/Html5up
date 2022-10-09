@@ -1,0 +1,23 @@
+/* Buttons */
+
+.btn-blue
+    @include button-bg($landing-color)
+
+.btn-pink
+    @include button-bg($pink-color)
+
+.btn
+    line-height: 2.5
+    font-size: $font-size-regular
+    border-radius: $border-radius-btn
+    border: $border-btn
+    background-color: $bg-color-btn
+
+.btn span
+    font-size: $font-size-regular
+    line-height: $line-height
+    color: $white-color
+
+@media screen and (min-width:700px) 
+    .btn
+        padding: 0 5% 0 5%

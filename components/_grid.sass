@@ -1,0 +1,30 @@
+.grid-section-3 div
+    border: $grid-border
+
+@media screen and (min-width:700px)
+    .section-second
+        display: grid
+        grid-template-columns: 400px 600px
+        grid-template-rows: 50vh auto 50vh
+        justify-items: stretch
+        margin-left: 20vw
+
+    .grid-section-2
+        justify-content: left
+
+    .grid-section-3
+        display: grid
+        grid-template-columns: 1fr, 1fr
+        grid-template-rows: 1fr, 1fr
+        margin-right: 5%
+        grid-template-areas: "content1 content2" "content3 content4" "content5 content6"
+    
+    .content1
+        border-top-left-radius: 5px
+        border-top-right-radius: 0px
+    .content2
+        border-top-right-radius: 5px 
+    .content5
+        border-bottom-left-radius: 5px    
+    .content6
+        border-bottom-right-radius: 5px

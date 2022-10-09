@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,39 +9,43 @@
     <script src="https://kit.fontawesome.com/0af60273bd.js" crossorigin="anonymous"></script>
     <title>HTML 5 Up Training</title>
 </head>
-<header>
-    <!-- https://html5up.net/hyperspace -->
-    <!-- Navbar du site qui n'est pas visible en format téléphone -->
-    <nav class="navbar">  
-        <ul class="nav-list">
-            <li class="nav-list-items">
-                <a href="#section-first">Welcome</a>
-            </li>
-            <li class="nav-list-items">
-                <a href="#section-second">Who we are</a>
-            </li>
-            <li class="nav-list-items">
-                <a href="#section-third">What we do</a>
-            </li>
-            <li class="nav-list-items">
-                <a href="#section-fourth">Get in touch</a>
-            </li>
-        </ul>
-    </nav>
-</header>
+<section class="navbar-container">
+    <div class="inner">
+        <nav class="navbar">
+            <ul>
+                <li class="li-nav">
+                    <a href="#section-first" class="">Welcome</a>
+                </li>
+                <li class="m-t-20 li-nav">
+                    <a href="#section-second">Who we are</a>
+                </li>
+                <li class="m-t-20 li-nav">
+                    <a href="#section-third">What we do</a>
+                </li>
+                <li class="m-t-20 li-nav">
+                    <a href="#section-fourth">Get in touch</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
 <body>
-    <main class="main">
+    <div class="wrapper">
         <div class="section-first p-t-10 p-l-10" id="section-first">
             <h1>Hyperspace</h1>
-            <p class="landing-text">Just another fine responsive site template designed by<br> HTML5 UP and released for free under the Creative Commons.</p>
-            <button href="#section-second" class="btn p-l-30 p-r-30 btn-blue m-b-10" name="button"><span>Learn More</span></button>
+            <p class="landing-text">Just another fine responsive site template designed by<br> HTML5 UP and released for
+                free under the Creative Commons.</p>
+            <button href="#section-second" class="btn p-l-30 p-r-30 btn-blue m-b-10" name="button"><span>Learn
+                    More</span></button>
         </div>
         <div class="section-second" id="section-second">
             <img src="/media/pic01.jpg" alt="photo d'un téléphone" class="photo">
-            <div class="grid-info-container">
+            <div class="grid-section-2">
                 <h2 class="p-l-10 p-t-10">Sed Ipsum dolor</h2>
                 <p class="para-text p-r-10 p-l-10">
-                    Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
+                    Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                    malesuada quis. Aliquam dapibus.
                 </p>
                 <div class="p-b-10 p-l-10">
                     <button class="btn p-l-30 p-r-30 btn-blue" name="button">
@@ -49,11 +54,12 @@
                 </div>
             </div>
             <img src="/media/pic02.jpg" alt="Photo d'un traffic en ville" class="photo">
-            <div class="grid-info-container">
+            <div class="grid-section-2">
                 <h2 class="p-l-10 p-t-10">Feugiat consequat</h2>
-                    <p class="para-text p-r-10 p-l-10 ">
-                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
-                    </p>
+                <p class="para-text p-r-10 p-l-10 ">
+                    Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                    malesuada quis. Aliquam dapibus.
+                </p>
                 <div class="p-b-10 p-l-10">
                     <button class="btn p-l-30 p-r-30 btn-blue" name="button">
                         <span>Learn More</span>
@@ -61,11 +67,12 @@
                 </div>
             </div>
             <img src="/media/pic03.jpg" alt="Photo d'un homme dans les nuages" class="photo">
-            <div class="grid-info-container">
+            <div class="grid-section-2">
                 <h2 class="p-l-10 p-t-10">Ultricies aliquam</h2>
-                    <p class="para-text p-r-10 p-l-10 ">
-                        Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.
-                    </p>
+                <p class="para-text p-r-10 p-l-10 ">
+                    Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat
+                    malesuada quis. Aliquam dapibus.
+                </p>
                 <div class=" p-b-10 p-l-10">
                     <button class="btn p-l-30 p-r-30 btn-blue" name="button">
                         <span>Learn More</span>
@@ -75,61 +82,73 @@
         </div>
         <div class="section-third p-t-10" id="section-third">
             <h2 class="sous-titre m-l-10 ">What we do</h2>
-                <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-            <div class="grid-container p-l-5">
-                <div class="p-b-10 border-radius-top">   
+            <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis
+                mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est
+                aliquam
+                sem, sit amet imperdiet est velit quis lorem.</p>
+            <div class="grid-section-3 p-l-5">
+                <div class="p-b-10 border-radius-top content1">
                     <i class="m-l-10 p-t-10 fa-solid fa-code"></i>
                     <h3 class="p-l-10">Lorem Ipsum Amet</h3>
-                    <p class="para-text p-r-10 p-l-10">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
 
                 </div>
-                <div class="p-b-10">
+                <div class="p-b-10 content2">
                     <i class="m-l-10 p-t-10 fa-solid fa-lock"></i>
                     <h3 class="p-l-10">Aliquam sed nullam</h3>
-                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
-                <div class="p-b-10">
+                <div class="p-b-10 content3">
                     <i class="m-l-10 p-t-10 fa-regular fa-gear"></i>
                     <h3 class="p-l-10">Sed erat ullam corper</h3>
-                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
-                <div class="p-b-10">
+                <div class="p-b-10 content4">
                     <i class="m-l-10 p-t-10 fa-solid fa-desktop"></i>
                     <h3 class="p-l-10">Veroeros quis lorem</h3>
-                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
-                <div class="p-b-10">
+                <div class="p-b-10 content5">
                     <i class="m-l-10 p-t-10 fa-solid fa-link"></i>
                     <h3 class="p-l-10">Urna quis bibendum</h3>
-                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
-                <div class="p-b-10 border-radius-bot">
+                <div class="p-b-10 border-radius-bot content6">
                     <i class="m-l-10 p-t-10 fa-solid fa-gem"></i>
                     <h3 class="p-l-10">Aliquam urna dapibus</h3>
-                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+                    <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullam corper amet et pulvinar. Duis
+                        aliquam turpis mauris, sed ultricies erat dapibus.</p>
                 </div>
             </div>
             <div class="p-t-10 p-b-10 p-l-10">
-                <button class="btn p-l-30 p-r-30 btn-pink"><span>Learn More</span></button>
+                <button class="btn m-t-5 p-l-30 p-r-30 btn-pink"><span>Learn More</span></button>
             </div>
         </div>
         <div class="section-fourth p-t-10 p-b-10" id="section-fourth">
             <h2 class="sous-titre p-l-10">Get in touch</h2>
-                <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+            <p class="para-text p-r-10 p-l-10 ">Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis
+                mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est
+                aliquam
+                sem, sit amet imperdiet est velit quis lorem.</p>
             <form class="form-contact p-l-10 p-r-10">
-                    <label class="form-label p-t-5 p-b-5" for="name">Name</label>
-                    <input class="small-area-input p-b-5 input-background" type="text" required="required"></input>
-                    <label class="form-label p-t-5 p-b-5" for="email">Email</label>
-                    <input class="small-area-input p-b-5 input-background" type="text" required="required"></input>
-                    <label class="form-label p-t-5 p-b-5" for="message">Message</label>
-                    <textarea class="message-area-input p-b-50 input-background" type="text" required="required"></textarea>
+                <label class="form-label p-t-5 p-b-5" for="name">Name</label>
+                <input class="small-area-input p-b-5 input-background" type="text" required="required"></input>
+                <label class="form-label p-t-5 p-b-5" for="email">Email</label>
+                <input class="small-area-input p-b-5 input-background" type="text" required="required"></input>
+                <label class="form-label p-t-5 p-b-5" for="message">Message</label>
+                <textarea class="message-area-input p-b-50 input-background" type="text" required="required"></textarea>
                 <div class="m-t-10 ">
                     <button type="button" class="btn p-l-30 p-r-30 btn-blue"><span>Send Message</span></button>
                 </div>
             </form>
 
             <!-- trait de séparation c'est une image ou du css ? -->
-            
+
             <ul class="info-contact-list p-l-10">
                 <li>
                     <h3>Address</h3>
@@ -150,13 +169,14 @@
                 </li>
             </ul>
         </div>
-        <div class="footer p-t-10 p-b-10">
-            <ul class="list-footer">
-                <li class="list-footer-elements">© Untitled. All rights reserved.</li>
-                <li class="list-footer-elements p-t-2 p-b-2">Images: Unsplash</li>
-                <li class="list-footer-elements">Design: HTML5 UP</li>
-            </ul>
-        </div>
-    </main>
+    </div>
+    <div class="footer p-t-10 p-b-10">
+        <ul class="list-footer">
+            <li class="list-footer-elements">© Untitled. All rights reserved.</li>
+            <li class="list-footer-elements p-t-2 p-b-2">Images: Unsplash</li>
+            <li class="list-footer-elements">Design: HTML5 UP</li>
+        </ul>
+    </div>
 </body>
+
 </html>

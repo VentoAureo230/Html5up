@@ -1,52 +1,44 @@
-@media screen and (min-width:700px)    
-    .navbar 
+@import '_variables'
+
+@media screen and (min-width:700px)
+    
+    .navbar-container
+        padding: 2.5em 2.5em 0.5em 2.5em
+        background: #312450
+        cursor: default
         height: 100vh
-        display: flex
+        left: 0
         position: fixed
+        text-align: right
+        top: 0
+        width: 18vw
+        z-index: 10000
 
-    .nav-list 
-        background-color: $nav-bg-color
-        color: $nav-text-color
-        flex-direction: column
-        list-style: none
-        width: 20vw
-
-
-    .nav-list-items
-        li
-            align-items: center
-            justify-content: center
-            list-style: none
-            text-transform: uppercase
-            text-align: end
-
-        a
-            color: $nav-link-color
-            font-weight: 400
-            text-decoration: none
-    
-    .section-first, .section-fourth, .section-second, .section-third
-        margin-left: 18vw
-
-    /* .section-first
-        height: 100vh
-        padding-top: 5%
-        padding-bottom: 0%
-
-    /* .btn
-        padding: 0 5% 0 5%
-
-    /* .photo
+    .sidebar
+        display: flex
+        min-height: 100%
         width: 100%
-        height: 100%
-
-    /* .section-second
-        display: grid
-        grid-template-columns: 400px 600px
-        grid-template-rows: 50vh auto 50vh
-        justify-items: stretch
-        margin-left: 20vw
-
-    /* .grid-info-container
-        justify-content: left 
     
+    ul 
+        margin: 30vh 0 2em 0
+        list-style: none
+
+    .li-nav 
+        position: relative
+    
+    a 
+        text-decoration: none
+        color: #fff
+    
+    .li-nav:before
+        position: absolute
+        content: ""
+        background-image: #ffffff
+        height: 2px
+        width: 100%
+        right: 0
+        bottom: -10px
+
+    .li-nav:before
+         background-image: linear-gradient(to right, #5e42a6, #b74e91)
+         transition: transform 0.5s ease
