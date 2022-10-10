@@ -1,4 +1,0 @@
-Fix le grid
-Changer la couleur dans le form
-
-Faire le média query, comment faire fonctionner les includes ?
