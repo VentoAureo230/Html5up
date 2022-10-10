@@ -4,6 +4,8 @@
 @import 'components/_nav'
 @import 'components/_grid'
 @import 'components/_button'
+@import 'components/_footer'
+@import 'components/_section4'
 
 body
     @extend %no-spacing
@@ -27,21 +29,11 @@ h1, h2, h3
     line-height: $line-height
     color: $paragraph-color
 
-.info-contact-list
-    @include reset-list
-
-.info-contact-list p
-    color: $paragraph-color
-    line-height: $line-height
-
 .para-text
     font-size: $font-size-regular
     line-height: $line-height
     color: $paragraph-color
 
-.form-contact
-    display: flex
-    flex-direction: column
 
 .section-first, .section-fourth
     background-color: $landing-color
@@ -52,36 +44,6 @@ h1, h2, h3
 .section-third
     background-color: $pink-color
 
-.border-radius-top
-    border-radius: $border-radius-top
-
-.border-radius-bot
-    border-radius: $border-radius-bot
-
-.footer
-    background-color: $footer-color
-
-.list-footer-elements
-    @include reset-list
-    font-size: small
-
-.list-footer
-    color: $paragraph-color
-
-.form-label
-    color: $form-label-color
-    font-size: $font-size-label
-
-.small-area-input
-    border-radius: $border-radius-input
-    opacity: $opacity-input
-
-.message-area-input
-    border-radius: $border-radius-input
-    opacity: $opacity-input
-
-.input-background
-    background-color: hsl(257, 43%, 75%)
 
 @media screen and (min-width:700px) 
     .section-first, .section-fourth, .section-second, .section-third
