@@ -4,10 +4,32 @@
 .list-footer-elements
     @include reset-list
     font-size: small
+.mid-element
+    margin-top: 5%
+    margin-bottom: 5%
 
 .list-footer
     color: $paragraph-color
+    padding-top: 10%
+    padding-block: 10%
+    margin:0 
+
 
 @media screen and (min-width: 700px)
     .footer
         margin-left: 22vw
+
+    .footer > ul 
+        margin: 0
+        padding: 5% 0 5% 0
+    
+    .footer > ul > li
+        margin-left: 8%
+    
+    .list-footer
+        display: flex
+        flex-direction: row
+    
+    .mid-element
+        margin-top: 0
+        margin-bottom: 0 

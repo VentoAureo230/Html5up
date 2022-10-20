@@ -3,6 +3,7 @@
 .form-label
     color: $form-label-color
     font-size: $font-size-label
+    margin-top: 5%
 
 .small-area-input
     display: flex
@@ -26,13 +27,18 @@
 .input-background
     background-color: hsl(257, 43%, 75%)
 
+.title-form, .para-form
+    margin-left: 10%
+
+.btn-form
+    margin-top: 10%
 @media screen and (min-width:700px)
     .grid-form
         display: grid
         grid-template-columns: 1fr 1fr 1fr
-        grid-template-rows: 0.5fr 1.5fr
-        grid-template-areas: "name-input email-input info-list" "message message info-list"
-        margin-left: 10%
+        grid-template-rows: 0.5fr 1.5fr 0.5fr
+        grid-template-areas: "name-input email-input info-list" "message message info-list" "btn btn info-list"
+        margin-left: 5%
         margin-right: 10%
 
     .small-area-input
@@ -41,25 +47,33 @@
         width: 90%
         height: 40%
 
+    .info-contact-list
+        grid-area: info-list
+    
+    .btn-form
+        grid-area: btn
+        margin-top: 10%
+
     .message
         margin-top: 5%
         grid-area: message
-        height: 90%
+        height: 80%
         width: 200%
         padding-bottom: 0
 
     .message-input
+        margin-top: 10%
+    
+    .name-input, .email-input
         margin-top: 5%
     
-    .name-input
-        margin-top: 5%
-    
-    .email-input
-        margin-top: 5%
+    .section-fourth > h2
+        margin-left: 8%
 
-    .info-contact-list
-        grid-area: info-list
-/* Contact list */
+    .section-fourth > .paragraph-text
+        margin-left: 8%
+    
+    
 
 .info-contact-list
     @include reset-list
