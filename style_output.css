@@ -237,7 +237,7 @@ body {
 /* Form label */
 /* Grid */
 /* Grid divs */
-/* List Style */    
+/* List Style */
 /* Button hover effect */
 /* Colors */
 /* Font */
@@ -266,22 +266,27 @@ body {
     width: 18vw;
     z-index: 10000;
   }
+
   .sidebar {
     display: flex;
     min-height: 100%;
     width: 100%;
   }
+
   ul {
     margin: 30vh 0 2em 0;
     list-style: none;
   }
+
   .li-nav {
     position: relative;
   }
+
   a {
     text-decoration: none;
     color: #fff;
   }
+
   .li-nav:before {
     position: absolute;
     content: "";
@@ -291,11 +296,13 @@ body {
     right: 0;
     bottom: -10px;
   }
+
   .li-nav:before {
     background-image: linear-gradient(to right, #5e42a6, #b74e91);
     transition: transform 0.5s ease;
   }
 }
+
 .grid-section-3 {
   margin-right: 5%;
 }
@@ -320,37 +327,46 @@ body {
     justify-items: stretch;
     margin-left: 20vw;
   }
+
   .grid-section-2 {
     justify-content: left;
   }
+
   .grid-section-3 {
     display: grid;
     grid-template-columns: 1fr, 1fr;
     grid-template-rows: 1fr, 1fr;
     grid-template-areas: "content1 content2" "content3 content4" "content5 content6";
   }
+
   .content1 {
     border-top-left-radius: 5px;
     border-top-right-radius: 0px;
   }
+
   .content2 {
     border-top-right-radius: 5px;
   }
+
   .content5 {
     border-bottom-left-radius: 5px;
   }
+
   .content6 {
     border-bottom-right-radius: 5px;
   }
 }
+
 /* Buttons */
 .btn-blue {
   background: #5F43A7;
 }
+
 .btn-blue:hover {
   background: #7357bc;
   transition: all 0.3s ease-in;
 }
+
 .btn-blue:active {
   background: #a795d4;
 }
@@ -358,10 +374,12 @@ body {
 .btn-pink {
   background: #B74E91;
 }
+
 .btn-pink:hover {
   background: #c36ba3;
   transition: all 0.3s ease-in;
 }
+
 .btn-pink:active {
   background: #dca9c9;
 }
@@ -385,6 +403,7 @@ body {
     color: black;
   }
 }
+
 .footer {
   background-color: #493382;
 }
@@ -412,22 +431,27 @@ body {
   .footer {
     margin-left: 22vw;
   }
-  .footer > ul {
+
+  .footer>ul {
     margin: 0;
     padding: 5% 0 5% 0;
   }
-  .footer > ul > li {
+
+  .footer>ul>li {
     margin-left: 8%;
   }
+
   .list-footer {
     display: flex;
     flex-direction: row;
   }
+
   .mid-element {
     margin-top: 0;
     margin-bottom: 0;
   }
 }
+
 /* Form */
 .form-label {
   color: #fff;
@@ -444,7 +468,9 @@ body {
   opacity: 0.1;
 }
 
-.name-input, .email-input, .message-input {
+.name-input,
+.email-input,
+.message-input {
   margin-left: 10%;
 }
 
@@ -461,7 +487,8 @@ body {
   background-color: hsl(257deg, 43%, 75%);
 }
 
-.title-form, .para-form {
+.title-form,
+.para-form {
   margin-left: 10%;
 }
 
@@ -478,19 +505,23 @@ body {
     margin-left: 5%;
     margin-right: 10%;
   }
+
   .small-area-input {
     margin-top: 5%;
     grid-area: email-input;
     width: 90%;
     height: 40%;
   }
+
   .info-contact-list {
     grid-area: info-list;
   }
+
   .btn-form {
     grid-area: btn;
     margin-top: 10%;
   }
+
   .message {
     margin-top: 5%;
     grid-area: message;
@@ -498,19 +529,25 @@ body {
     width: 200%;
     padding-bottom: 0;
   }
+
   .message-input {
     margin-top: 10%;
   }
-  .name-input, .email-input {
+
+  .name-input,
+  .email-input {
     margin-top: 5%;
   }
-  .section-fourth > h2 {
+
+  .section-fourth>h2 {
     margin-left: 8%;
   }
-  .section-fourth > .paragraph-text {
+
+  .section-fourth>.paragraph-text {
     margin-left: 8%;
   }
 }
+
 .info-contact-list {
   margin: 0;
   padding: 0;
@@ -530,7 +567,9 @@ body {
   overflow-y: scroll;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: #fff;
   line-height: 26px;
 }
@@ -552,7 +591,8 @@ h1, h2, h3 {
   color: #AA99C7;
 }
 
-.section-first, .section-fourth {
+.section-first,
+.section-fourth {
   background-color: #5F43A7;
 }
 
@@ -569,20 +609,28 @@ h1, h2, h3 {
 }
 
 @media screen and (min-width: 700px) {
-  .section-first, .section-fourth, .section-second, .section-third {
+
+  .section-first,
+  .section-fourth,
+  .section-second,
+  .section-third {
     margin-left: 22vw;
   }
+
   .section-first {
     height: 80vh;
   }
+
   h1 {
     margin-top: 15%;
     font-size: 2.75em;
   }
+
   .photo {
     width: 100%;
     height: 100%;
   }
+
   .landing-text {
     font-size: 1.25em;
     line-height: 39px;
